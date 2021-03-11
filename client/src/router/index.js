@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Notfound from '../views/404.vue'
+//import Header from '../app_header.vue'
 
 Vue.use(VueRouter)
 
@@ -12,10 +13,12 @@ const routes = [
     component: () => import('../views/Home.vue')
   },
   {
-    path: '/',
+    path: '/notfound',
     name: 'Notfound',
+    //component: Header
     component: () => import('../views/404.vue')
   },
+
 ]
 
 const router = new VueRouter({
