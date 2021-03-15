@@ -3,13 +3,14 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Notfound from '../views/404.vue'
 //import Header from '../app_header.vue'
+import Nosotros from '../views/Nosotros.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'Home',  
     component: () => import('../views/Home.vue')
   },
   {
@@ -18,6 +19,12 @@ const routes = [
     //component: Header
     component: () => import('../views/404.vue')
   },
+  {
+    path: '/nosotros',
+    name: 'Nosotros',
+    component: Nosotros
+    
+  }
 
 ]
 

@@ -1,43 +1,51 @@
 <template>
     <div id="app">
     <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div  class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="http://aimoficial.com//WebPage/server/public/src/img/aim_logo.png" class="img-fluid" alt="Responsive image" width="50">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark " >
+              <a href="/" class="navbar-brand">
+                <img src="http://aimoficial.com/images/aim_logo.png" class="img-fluid" alt="Responsive image" width="70">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarMenu">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <router-link to="/" class="nav-link"><b class="letter" > Inicio </b></router-link>
+                      </li>
+                      <li class="nav-item">
+                        <router-link  to="/Nosotros" class="nav-link"><b class="letter"> Nosotros</b ></router-link>
+                      </li>
+                      <li class="nav-item">
+                          <router-link to="/contacto" class="nav-link"><b class="letter">Eventos</b ></router-link> 
+                      </li>
+                      <li class="nav-item">
+                          <router-link to="/about" class="nav-link"><b class="letter">Información</b ></router-link>
                         </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
+                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            <b class="letter"> Comunidad</b>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Bachilerato</a></li>
+                            <li><a class="dropdown-item" href="#">Cápitulos universitario</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Profesionistas</a></li>
                         </ul>
                         </li>
-                        <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <button class="button button4" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+                      
+                      <!--
+                      <li class="nav-item">
+                          <router-link  to="/signup" class="nav-link">Signup </router-link>
+                      </li>
+                      -->
+                  </ul>
+                  <form class="d-flex">
+                  <button class="button button4" type="submit">Unirse</button>
+                  </form>
+              </div>
+
+      </nav>
     </div>
 </div>
 </template>
@@ -78,8 +86,17 @@
 }
 
 .button4:hover {
-  background-color: #eeec93;
+  background-color: #ffffff7c;
   color: rgb(0, 0, 0);
 }
+.letter{
+/*font-size:19px;
+//font-family:  "Segoe UI";
+*/
+font: sans-serif;
+color:#ffffff;
+
+}
+
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 </style>
