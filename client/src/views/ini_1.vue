@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="bg">
     <v-parallax
       dark
-      v-bind:src="'../public/src/img/ini_1.png'"
+      v-bind:src="'http://aimoficial.com/images/Home/ini_1.png'"
       height="800"
     >
       <v-row
@@ -60,3 +60,10 @@
   <!-- SEPARADOR -- SEPARADOR -- SEPARADOR -- SEPARADOR -- SEPARADOR -->
   </div>
 </template>
+
+<style scoped>
+body, html{
+  height: 100%;
+}
+
+</style>

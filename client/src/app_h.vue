@@ -9,22 +9,22 @@
                   <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarMenu">
-                  <ul class="navbar-nav">
+                  <ul class="navbar-nav ">
                       <li class="nav-item">
-                          <router-link to="/" class="nav-link"><b class="letter" > Inicio </b></router-link>
+                          <router-link to="/" class="nav-link"><b class="letter ml-10" > Inicio </b></router-link>
                       </li>
                       <li class="nav-item">
-                        <router-link  to="/Nosotros" class="nav-link"><b class="letter"> Nosotros</b ></router-link>
+                        <router-link  to="/Nosotros" class="nav-link"><b class="letter ml-10"> Nosotros</b ></router-link>
                       </li>
                       <li class="nav-item">
-                          <router-link to="/contacto" class="nav-link"><b class="letter">Eventos</b ></router-link> 
+                          <router-link to="/Notfound" class="nav-link"><b class="letter ml-10">Eventos</b ></router-link> 
                       </li>
                       <li class="nav-item">
-                          <router-link to="/about" class="nav-link"><b class="letter">Información</b ></router-link>
+                          <router-link to="/Notfound" class="nav-link"><b class="letter ml-10">Información</b ></router-link>
                         </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <b class="letter"> Comunidad</b>
+                            <b class="letter ml-10"> Comunidad</b>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Bachilerato</a></li>
@@ -40,9 +40,12 @@
                       </li>
                       -->
                   </ul>
-                  <form class="d-flex">
+                  <div class="ml-10">
+                  <form class="d-flex ml-3 ">
                   <button class="button button4" type="submit">Unirse</button>
                   </form>
+                  </div>
+                    
               </div>
 
       </nav>

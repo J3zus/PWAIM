@@ -64,7 +64,7 @@
                 <div class="content">
                     <h2 class="title">Misión</h2>
                     <br>
-                    <p>calidad profesional de nuestra comunidad</p>
+                    <p>Calidad profesional de nuestra comunidad</p>
                     
                     <div class="text-center">
                         <v-dialog
@@ -112,9 +112,6 @@
                         </v-card>
                         </v-dialog>
                     </div>
-
-
-
 
                 </div>
             </div>
@@ -172,10 +169,6 @@
                         </v-dialog>
                     </div>
 
-
-
-
-
                 </div>
             </div>
             <div class="card">
@@ -201,7 +194,7 @@
                         </template>
 
                         <v-card>
-                            <v-card-title class="headline grey lighten-2">
+                            <v-card-title class="headline grey lighten-2 ">
                             VALORES
                             </v-card-title>
 
@@ -240,12 +233,67 @@
         </main>
         
     </div>
-    <!--EJEMPLO-->
-    
 
-   </div>
 
-   
+    <!-- EQUIPO -->
+
+    <!-- For demo purpose -->
+<div class="container py-5 text-center">
+    <div class="row text-center text-white">
+        <div class="col-lg-8 mx-auto">
+            <h1  class="text-center ml-4 display-3 font-weight-thin mb-4 black--text"> EQUIPO AIM </h1>
+            <p class="text-center ml-4 headline black--text">Te presentamos al equipo que forma parte de esta asociacion</p>
+        </div>
+    </div>
+</div><!-- End -->
+
+
+<div class="container">
+    <div class="row text-center">
+
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow py-5 px-4"><img src="http://aimoficial.com/images//Nosotros/jony.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Jonathan Duarte</h5><span class="small text-uppercase text-muted">Jefe de jefes</span>
+            <br><br>
+            </div>
+        </div><!-- End -->
+
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow py-5 px-4"><img src="http://aimoficial.com/images//Nosotros/norman.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Norman Rueda</h5><span class="small text-uppercase text-muted">Jefaso</span>
+            <br><br>
+            </div>
+        </div><!-- End -->
+
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Tom Sunderland</h5><span class="small text-uppercase text-muted">Persona de prueba</span>
+                <br><br>
+            </div>
+        </div><!-- End -->
+
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">John Tarly</h5><span class="small text-uppercase text-muted">Persona de prueba</span>
+                <br><br>
+            </div>
+        </div><!-- End -->
+    </div>
+</div>
+
+
+
+
+</div>
+
+
+<!-- EQUIPO -->
+
+
 
 </template>
 
@@ -450,5 +498,10 @@ export default {
 		 transition-duration: 0s;
 	}
 }
+ 
+
+
+
+
  
 </style>

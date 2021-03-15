@@ -2,7 +2,7 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <v-parallax
     dark
-    v-bind:src="'../public/src/img/iniback.png'"
+    v-bind:src="'http://aimoficial.com/images/iniback.png'"
     height="800"
   >
     <v-row
