@@ -1,7 +1,7 @@
 <template>
     <v-parallax
       dark
-      v-bind:src="'../public/src/img/ini_4.png'"
+      v-bind:src="'http://aimoficial.com/images/Home/ini_4.png'"
       height="720"
     >
       <v-row

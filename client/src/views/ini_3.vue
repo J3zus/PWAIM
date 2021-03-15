@@ -1,7 +1,8 @@
 <template>
+<div>
     <v-parallax
       dark
-      v-bind:src="'../public/src/img/iniback.png'"
+      v-bind:src="'http://aimoficial.com/images/iniback.png'"
       height="900"
     >
       <v-row
@@ -16,7 +17,8 @@
             ¡VEN Y UNETE A NUESTRA COMUNIDAD!
           </h1>
         </v-col>
-        <img width="1280" height="720" v-bind:src="'../public/src/img/ini_3.png'" />
+        <img width="1280" height="720" v-bind:src="'http://aimoficial.com/images/Home/ini_3.png'" />
       </v-row>
     </v-parallax>
+  </div>
 </template>

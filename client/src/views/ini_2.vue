@@ -1,39 +1,45 @@
 <template>
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <v-parallax
-    dark
-    v-bind:src="'http://aimoficial.com/images/iniback.png'"
-    height="800"
-  >
-    <v-row
-      align="center"
-      justify="center"
-    >
-        <v-col
-          class=""
-          cols="12"
-        >
-          <h1 class="text-center display-3 font-weight-thin mb-4 black--text">
-            ACTIVIDADES Y EVENTOS
-          </h1>
-        </v-col>
-    </v-row>
-  
-      <v-carousel height="696px">
-        <li>
-        <v-carousel-item
-          v-for="tile in tiles"
-          :key="tile.title"
-          :src="tile.src"
-          :to="{name: tile.title}"
-          reverse-transition="fade-transition"
-          transition="fade-transition"
-        >
-        <!--<router-link tag="li" :to="{name: tile.title}"><v-list-item-title>{{ tile.title }}</v-list-item-title></router-link>-->
-        </v-carousel-item></li>
-      </v-carousel>
-  </v-parallax>
-</div>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://wallpaperaccess.com/full/653723.jpg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: #000000">Hola compañeros</h5>
+        <p style="color: #000000">este mensaje...</p>
+        
+        <button type="button" class="btn btn-outline-dark">Ver</button>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj4_ElspRge-c12oI8d0_POU7NYwS06twTMg&usqp=CAU" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: #000000">es para mostrar los carousel</h5>
+        <p style="color: #000000">pero ademas </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://c0.wallpaperflare.com/preview/590/806/363/4k-wallpaper-animal-black-and-white-hd-wallpaper.jpg" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: #000000">es para decirles</h5>
+        <p style="color: #000000">que los tqm ♥</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 </template>
 
 <script>

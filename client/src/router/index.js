@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Notfound from '../views/404.vue'
 //import Header from '../app_header.vue'
 import Nosotros from '../views/Nosotros.vue'
+import Informacion from '../views/Informacion.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,11 @@ const routes = [
     path: '/nosotros',
     name: 'Nosotros',
     component: Nosotros
+  },
+  {
+    path: '/informacion',
+    name: 'Informacion',
+    component: Informacion
   }
 
 ]

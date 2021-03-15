@@ -20,7 +20,7 @@
                           <router-link to="/Notfound" class="nav-link"><b class="letter ml-10">Eventos</b ></router-link> 
                       </li>
                       <li class="nav-item">
-                          <router-link to="/Notfound" class="nav-link"><b class="letter ml-10">Información</b ></router-link>
+                          <router-link to="/Informacion" class="nav-link"><b class="letter ml-10">Información</b ></router-link>
                         </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
