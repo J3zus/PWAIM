@@ -1,44 +1,279 @@
-<template>
+<template >
    <div>
-       <main class="page-content">
-    <div class="card">
-        <div class="content">
-            <h2 class="title">Objetivos</h2>
-            <p>Algo de texto que quieran agregar</p><button class="btnCard">Conocenos</button>
-        </div>
+    <!-- CARDS -->
+    <div>
+        <br>
+        <main class="page-content">
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Objetivos</h2>
+                    <br>
+                    <p>Conoce nuestros objetivos</p>
+
+                    <div class="text-center">
+                        <v-dialog
+                        v-model="dialog_OBJETIVOS"
+                        width="500"
+                        >
+                        <template v-slot:activator="{ on, attrs }">
+                            <v-btn
+                            color="black lighten-2"
+                            dark
+                            v-bind="attrs"
+                            v-on="on"
+                            >
+                            Conocenos
+                            </v-btn>
+                        </template>
+
+                        <v-card>
+                            <v-card-title class="headline grey lighten-2">
+                            OBJETIVOS
+                            </v-card-title>
+
+                            <v-card-text>
+                                <br>
+                                Un capítulo estudiantil es una sede activa dentro de la organización de AIM compuesta por 
+                                miembros estudiantiles y asesores en una universidad o instituto técnico para representar y satisfacer 
+                                las necesidades de los miembros y la misión de la AIM. 
+                                Cada grupo realizará sus actividades dentro lo establecido en la Constitución y Estatutos de AIM.
+                            </v-card-text>
+
+                            <v-divider></v-divider>
+
+                            <v-card-actions>
+                            <v-spacer></v-spacer>
+                            <v-btn
+                                color="black"
+                                text
+                                
+                                @click.prevent="CERRAR()"
+                                
+                            >
+                                Aceptar
+                            </v-btn>
+                            </v-card-actions>
+                        </v-card>
+                        </v-dialog>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Misión</h2>
+                    <br>
+                    <p>calidad profesional de nuestra comunidad</p>
+                    
+                    <div class="text-center">
+                        <v-dialog
+                        v-model="dialog_MISION"
+                        width="500"
+                        >
+                        <template v-slot:activator="{ on, attrs }">
+                            <v-btn
+                            color="black lighten-2"
+                            dark
+                            v-bind="attrs"
+                            v-on="on"
+                            >
+                            VER
+                            </v-btn>
+                        </template>
+
+                        <v-card>
+                            <v-card-title class="headline grey lighten-2">
+                            MISION
+                            </v-card-title>
+
+                            <v-card-text>
+                                <br>
+                                Procurar y asegurar la calidad profesional de nuestra 
+                                comunidad, a través de la vinculación entre el 
+                                estudiando, egresados e industrias, por medio de 
+                                proyectos en pro de la ingeniería que mejoren el 
+                                bienestar social.
+                            </v-card-text>
+
+                            <v-divider></v-divider>
+
+                            <v-card-actions>
+                            <v-spacer></v-spacer>
+                            <v-btn
+                                color="black"
+                                text
+                                @click.prevent="CERRAR()"
+                                
+                            >
+                                Aceptar
+                            </v-btn>
+                            </v-card-actions>
+                        </v-card>
+                        </v-dialog>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Vision</h2>
+                    <br>
+                    <p>Desarrollo de sus miembros</p>
+
+                    <div class="text-center">
+                        <v-dialog
+                        v-model="dialog_VISION"
+                        width="500"
+                        >
+                        <template v-slot:activator="{ on, attrs }">
+                            <v-btn
+                            color="black lighten-2"
+                            dark
+                            v-bind="attrs"
+                            v-on="on"
+                            >
+                            VER
+                            </v-btn>
+                        </template>
+
+                        <v-card>
+                            <v-card-title class="headline grey lighten-2">
+                            VISION
+                            </v-card-title>
+
+                            <v-card-text>
+                                <br>
+                                AIM es una asociación que busca el desarrollo de sus 
+                                miembros, estudiantes y egresados, a través de 
+                                actividades que desarrollen el ingenio, la creatividad y 
+                                el trabajo en equipo, dirigiéndolos a retos que crearan 
+                                a los futuros líderes de la industria tecnológica.
+                            </v-card-text>
+
+                            <v-divider></v-divider>
+
+                            <v-card-actions>
+                            <v-spacer></v-spacer>
+                            <v-btn
+                                color="black"
+                                text
+                                
+                                @click.prevent="CERRAR()"
+                                
+                            >
+                                VER
+                            </v-btn>
+                            </v-card-actions>
+                        </v-card>
+                        </v-dialog>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Valores</h2>
+                    <br>
+                    <p class="copy">Conoce nuestros los valores</p>
+
+                    <div class="text-center">
+                        <v-dialog
+                        v-model="dialog_VALORES"
+                        width="500"
+                        >
+                        <template v-slot:activator="{ on, attrs }">
+                            <v-btn
+                            color="black lighten-2"
+                            dark
+                            v-bind="attrs"
+                            v-on="on"
+                            >
+                            VER
+                            </v-btn>
+                        </template>
+
+                        <v-card>
+                            <v-card-title class="headline grey lighten-2">
+                            VALORES
+                            </v-card-title>
+
+                            <v-card-text>
+                                <br>
+                                -Empeño
+                                <br>
+                                -Creatividad
+                                <br>
+                                -Compromiso
+                                <br>
+                                -Liderazgo
+
+                            </v-card-text>
+
+                            <v-divider></v-divider>
+
+                            <v-card-actions>
+                            <v-spacer></v-spacer>
+                            <v-btn
+                                color="black"
+                                text
+                                
+                                @click.prevent="CERRAR()"
+                                
+                            >
+                                Aceptar
+                            </v-btn>
+                            </v-card-actions>
+                        </v-card>
+                        </v-dialog>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        
     </div>
-    <div class="card">
-        <div class="content">
-            <h2 class="title">Misión</h2>
-            <p>Algo de texto que quieran agregar</p><button class="btnCard">Ver ahora</button>
-        </div>
-    </div>
-    <div class="card">
-        <div class="content">
-            <h2 class="title">Vision</h2>
-            <p>Algo de texto que quieran agregar</p><button class="btnCard">Ver ahora</button>
-        </div>
-    </div>
-    <div class="card">
-        <div class="content">
-            <h2 class="title">Valores</h2>
-            <p class="copy">Algo de texto que quieran agregar</p><button class="btnCard">Ver ahora</button>
-        </div>
-    </div>
-</main>
+    <!--EJEMPLO-->
+    
 
    </div>
+
    
 
 </template>
 
 
 <script>
+export default {
+    data () {
+      return {
+          dialog_OBJETIVOS: false,
+          dialog_MISION: false,
+          dialog_VISION: false,
+          dialog_VALORES: false,
+      }
+    },
+    methods:{
+    CERRAR()
+    {
+        this.dialog_OBJETIVOS = false,
+        this.dialog_MISION = false,
+        this.dialog_VISION = false,
+        this.dialog_VALORES = false
 
-
+    },
+    }
+  }
 </script>
 
-<style  scoped>
+<style >
 @import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
  :root {
 	 --d: 700ms;
@@ -147,13 +382,18 @@
 	 font-size: 1.3rem;
 	 font-weight: bold;
 	 line-height: 1.2;
+     
 }
+/* --- TEXTO EN MAUSCRITO---
  .copy {
 	 font-family: var(--font-serif);
 	 font-size: 1.125rem;
 	 font-style: italic;
 	 line-height: 1.35;
 }
+*/
+/*  ----BOTNOES CSS----
+
  .btnCard {
 	 cursor: pointer;
 	 margin-top: 1.5rem;
@@ -174,6 +414,9 @@
 	 outline: 1px dashed yellow;
 	 outline-offset: 3px;
 }
+
+*/
+
  @media (hover: hover) and (min-width: 600px) {
 	 .card:after {
 		 transform: translateY(0);

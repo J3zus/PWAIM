@@ -23,7 +23,6 @@ const routes = [
     path: '/nosotros',
     name: 'Nosotros',
     component: Nosotros
-    
   }
 
 ]
