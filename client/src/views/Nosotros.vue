@@ -6,8 +6,9 @@
         <main class="page-content">
             <div class="card">
                 <div class="content">
-                    <h2 class="title">Objetivos</h2>
-                    <br>
+                    <h2 class="title">OBJETIVOS</h2>
+                    <img src="http://aimoficial.com/Backup/images/Nosotros/iconos/Objetivo_W.png" class="title img-fluid" alt="" width="60">
+                    
                     <p>Conoce nuestros objetivos</p>
 
                     <div class="text-center">
@@ -47,8 +48,7 @@
                                 color="black"
                                 text
                                 
-                                @click.prevent="CERRAR()"
-                                
+                                @click.prevent="CERRAR()"    
                             >
                                 Aceptar
                             </v-btn>
@@ -56,16 +56,15 @@
                         </v-card>
                         </v-dialog>
                     </div>
-
-
                 </div>
             </div>
             <div class="card">
                 <div class="content">
-                    <h2 class="title">Misión</h2>
-                    <br>
-                    <p>Calidad profesional de nuestra comunidad</p>
+                    <h2 class="title">MISIÓN</h2>
+                    <img src="http://aimoficial.com/Backup/images/Nosotros/iconos/Mision_W.png" class="title img-fluid" alt="" width="60">
                     
+                    <p>Calidad profesional </p>
+
                     <div class="text-center">
                         <v-dialog
                         v-model="dialog_MISION"
@@ -78,22 +77,20 @@
                             v-bind="attrs"
                             v-on="on"
                             >
-                            VER
+                            ver
                             </v-btn>
                         </template>
 
                         <v-card>
                             <v-card-title class="headline grey lighten-2">
-                            MISION
+                            MISIÓN
                             </v-card-title>
 
                             <v-card-text>
                                 <br>
-                                Procurar y asegurar la calidad profesional de nuestra 
-                                comunidad, a través de la vinculación entre el 
-                                estudiando, egresados e industrias, por medio de 
-                                proyectos en pro de la ingeniería que mejoren el 
-                                bienestar social.
+                                Procurar y asegurar la calidad profesional de nuestra comunidad,
+                                a través de la vinculación entre el estudiando, egresados e industrias,
+                                por medio de proyectos en pro de la ingeniería que mejoren el bienestar social.
                             </v-card-text>
 
                             <v-divider></v-divider>
@@ -103,8 +100,8 @@
                             <v-btn
                                 color="black"
                                 text
-                                @click.prevent="CERRAR()"
                                 
+                                @click.prevent="CERRAR()"    
                             >
                                 Aceptar
                             </v-btn>
@@ -112,13 +109,20 @@
                         </v-card>
                         </v-dialog>
                     </div>
-
                 </div>
             </div>
+
+            
+
+
+
+
             <div class="card">
                 <div class="content">
-                    <h2 class="title">Vision</h2>
-                    <br>
+                    <h2 class="title">VISIÓN</h2>
+                    <img src="http://aimoficial.com/Backup/images/Nosotros/iconos/Vision_W.png" class="title img-fluid" alt="" width="60">
+
+                    
                     <p>Desarrollo de sus miembros</p>
 
                     <div class="text-center">
@@ -162,7 +166,7 @@
                                 @click.prevent="CERRAR()"
                                 
                             >
-                                VER
+                                Aceptar
                             </v-btn>
                             </v-card-actions>
                         </v-card>
@@ -173,8 +177,9 @@
             </div>
             <div class="card">
                 <div class="content">
-                    <h2 class="title">Valores</h2>
-                    <br>
+                    <h2 class="title">VALORES</h2>
+                    <img src="http://aimoficial.com/Backup/images/Nosotros/iconos/Valores2_W.png" class="title img-fluid" alt="" width="60">
+                    
                     <p class="copy">Conoce nuestros los valores</p>
 
                     <div class="text-center">
@@ -383,8 +388,8 @@ export default {
 	 position: absolute;
 	 top: 0;
 	 left: 0;
-	 width: 110%;
-	 height: 110%;
+	 width: 100%;
+	 height: 100%;
 	 background-size: cover;
 	 background-position: 0 0;
 	 transition: transform calc(var(--d) * 1.5) var(--e);
@@ -404,16 +409,16 @@ export default {
 	 transition: transform calc(var(--d) * 2) var(--e);
 }
  .card:nth-child(1):before {
-	 background-image: url(http://aimoficial.com/images/Nosotros/Nosotros_Sc1_Objetivos.png);
+	 background-image: url(http://aimoficial.com/Backup/images/Nosotros/iconos/azul_claro.png);
 }
  .card:nth-child(2):before {
-	 background-image: url(http://aimoficial.com/images/Nosotros/Nosotros_Sc1_Mision.png);
+	 background-image: url(http://aimoficial.com/Backup/images/Nosotros/iconos/amarillo.png);
 }
  .card:nth-child(3):before {
-	 background-image: url(http://aimoficial.com/images/Nosotros/Nosotros_Sc1_Vision.png);
+	 background-image: url(http://aimoficial.com/Backup/images/Nosotros/iconos/azul_oscuro.png);
 }
  .card:nth-child(4):before {
-	 background-image: url(http://aimoficial.com/images/Nosotros/Nosotros_Sc1_Valores.png);
+	 background-image: url(http://aimoficial.com/Backup/images/Nosotros/iconos/naranja.png);
 }
  .content {
 	 position: relative;
@@ -421,7 +426,7 @@ export default {
 	 flex-direction: column;
 	 align-items: center;
 	 width: 100%;
-	 padding: 1rem;
+	 padding: 0rem;
 	 transition: transform var(--d) var(--e);
 	 z-index: 1;
 }
@@ -430,6 +435,7 @@ export default {
 	 font-size: 1.3rem;
 	 font-weight: bold;
 	 line-height: 1.2;
+     
      
 }
 /* --- TEXTO EN MAUSCRITO---
