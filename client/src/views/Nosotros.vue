@@ -259,7 +259,7 @@
         <!-- Team item -->
         <div class="col-xl-3 col-sm-6 mb-5">
             <div class="bg-white rounded shadow py-5 px-4"><img src="http://aimoficial.com/images//Nosotros/jony.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                <h5 class="mb-0">Jonathan Duarte</h5><span class="small text-uppercase text-muted">Jefe de jefes</span>
+                <h5 class="mb-0">Jonathan Duarte</h5><span class="small text-uppercase text-muted">Cargo</span>
             <br><br>
             </div>
         </div><!-- End -->
@@ -267,7 +267,7 @@
         <!-- Team item -->
         <div class="col-xl-3 col-sm-6 mb-5">
             <div class="bg-white rounded shadow py-5 px-4"><img src="http://aimoficial.com/images//Nosotros/norman.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                <h5 class="mb-0">Norman Rueda</h5><span class="small text-uppercase text-muted">Jefaso</span>
+                <h5 class="mb-0">Norman Rueda</h5><span class="small text-uppercase text-muted">Cargo</span>
             <br><br>
             </div>
         </div><!-- End -->
